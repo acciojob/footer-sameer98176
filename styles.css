@@ -1,1 +1,114 @@
-/* your code here */
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Footer */
+footer {
+  background: #000;
+  color: #fff;
+}
+
+/* Main container */
+.content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* Top section */
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.logo_name {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+/* Social icons */
+.media-icons a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  margin-left: 10px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  font-size: 18px;
+}
+
+/* Individual colors like image */
+.media-icons a:nth-child(1) { background: #4267B2; } /* Facebook */
+.media-icons a:nth-child(2) { background: #1DA1F2; } /* Twitter */
+.media-icons a:nth-child(3) { background: #E1306C; } /* Instagram */
+.media-icons a:nth-child(4) { background: #0077B5; } /* LinkedIn */
+.media-icons a:nth-child(5) { background: #FF0000; } /* YouTube */
+
+/* Links section */
+.link-boxes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.box {
+  list-style: none;
+  min-width: 150px;
+}
+
+.box .link_name {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.box li {
+  margin: 8px 0;
+}
+
+.box li a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.box li a:hover {
+  color: #fff;
+}
+
+/* Bottom bar */
+.bottom-details {
+  background: #2c303a;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  color: #ccc;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .top {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .link-boxes {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .bottom-details {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
