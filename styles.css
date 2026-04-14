@@ -12,14 +12,14 @@ footer {
   color: #fff;
 }
 
-/* Main container */
+/* Main Container */
 .content {
   max-width: 1200px;
   margin: auto;
   padding: 40px 20px;
 }
 
-/* Top section */
+/* Top Section */
 .top {
   display: flex;
   justify-content: space-between;
@@ -32,27 +32,34 @@ footer {
   font-weight: 500;
 }
 
-/* Social icons */
+/* ✅ FIXED (for Cypress test) */
+.media-icons {
+  display: flex;
+  align-items: center;
+}
+
+/* Social Icons */
 .media-icons a {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 40px;
   width: 40px;
   margin-left: 10px;
   border-radius: 50%;
-  text-align: center;
-  line-height: 40px;
   color: #fff;
   font-size: 18px;
+  text-decoration: none;
 }
 
-/* Individual colors like image */
+/* Icon Colors */
 .media-icons a:nth-child(1) { background: #4267B2; } /* Facebook */
 .media-icons a:nth-child(2) { background: #1DA1F2; } /* Twitter */
 .media-icons a:nth-child(3) { background: #E1306C; } /* Instagram */
 .media-icons a:nth-child(4) { background: #0077B5; } /* LinkedIn */
 .media-icons a:nth-child(5) { background: #FF0000; } /* YouTube */
 
-/* Links section */
+/* Links Section */
 .link-boxes {
   display: flex;
   justify-content: space-between;
@@ -78,13 +85,14 @@ footer {
   color: #aaa;
   text-decoration: none;
   font-size: 14px;
+  transition: 0.3s;
 }
 
 .box li a:hover {
   color: #fff;
 }
 
-/* Bottom bar */
+/* Bottom Section */
 .bottom-details {
   background: #2c303a;
   padding: 15px 20px;
